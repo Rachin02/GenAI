@@ -1,0 +1,2 @@
+
+"text-embedding-3-large" cost = $0.13 per 1 million input tokens for embeddings

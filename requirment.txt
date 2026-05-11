@@ -8,3 +8,8 @@ pymupdf
 wikipedia
 unstructured
 requests
+chromadb
+langchain-google-genai
+langchain_chroma
+
+langchain-openai
