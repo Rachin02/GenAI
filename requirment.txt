@@ -12,7 +12,7 @@ chromadb
 langchain-google-genai
 langchain_chroma
 langchain-openai
-
+langchain-chroma
 sentence_transformers
 langchain_huggingface
 faiss-cpu
