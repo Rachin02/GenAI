@@ -10,11 +10,13 @@ unstructured
 requests
 chromadb
 langchain-google-genai
+langchain-ollama
 langchain_chroma
 langchain-openai
-langchain-chroma
-sentence_transformers
 langchain_huggingface
+langchain-core
+
+sentence_transformers
+
 faiss-cpu
 streamlit
-langchain-ollama
