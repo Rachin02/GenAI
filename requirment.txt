@@ -15,8 +15,12 @@ langchain_chroma
 langchain-openai
 langchain_huggingface
 langchain-core
+langserve
 
 sentence_transformers
 
 faiss-cpu
 streamlit
+fastapi
+uvicorn
+sse_starlette
