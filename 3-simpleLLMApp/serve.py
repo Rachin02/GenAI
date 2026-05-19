@@ -29,7 +29,7 @@ result = chain.invoke({"language":"Bangla", "text":"Hi, how are you?"})
 # app definition
 app = FastAPI(title = "Langchain server",
               version = "1.0",
-              description = "A simple API server using langchain runnable interface")
+              description = "A simple API server using langchain runnable interface" )
 
 ## adding chain route
 
