@@ -24,3 +24,4 @@ streamlit
 fastapi
 uvicorn
 sse_starlette
+ddgs
