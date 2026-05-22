@@ -33,7 +33,7 @@ def generate_response(question, llm, temperature, max_token):
 st.title("Chatbot with ollama")
 
 # select the ollama model
-llm = st.sidebar.selectbox("Select opensourc model", ["gemma:2b", "llama3.1:latest","mxbai-embed-large:latest"])
+llm = st.sidebar.selectbox("Select opensource model", ["gemma:2b", "llama3.1:latest","mxbai-embed-large:latest"])
 
 # select temperature
 temperature = st.sidebar.slider("temperature", min_value= 0.0 , max_value= 1.0 ,value=0.7)

@@ -16,6 +16,7 @@ langchain-openai
 langchain_huggingface
 langchain-core
 langserve
+langchain-groq
 
 sentence_transformers
 
@@ -25,3 +26,4 @@ fastapi
 uvicorn
 sse_starlette
 ddgs
+torchvision
