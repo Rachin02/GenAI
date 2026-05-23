@@ -46,8 +46,9 @@ if uploaded_files:
 
 
     # split and create embedding for the documents
-    print(documents)
-    text_splitters = RecursiveCharacterTextSplitter(chunk_size= 5000, chunk_overlap = 500)
+    # print(documents)
+    st.write(docs[0].page_content[:1000])
+    text_splitters = RecursiveCharacterTextSplitter(chunk_size= 1000, chunk_overlap = 500)
     final_documents = text_splitters.split_documents(documents)
     vectorstore = Chroma.from_documents(final_documents, embedding)
     retriever = vectorstore.as_retriever()
