@@ -17,6 +17,7 @@ langchain_huggingface
 langchain-core
 langserve
 langchain-groq
+langchainhub
 
 sentence_transformers
 
