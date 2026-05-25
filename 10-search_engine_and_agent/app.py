@@ -56,7 +56,7 @@ After using tools, summarize the information in simple words. use maximum 10 sen
 """
 model = ChatOpenAI(model = "gpt-5-nano",streaming=True) #model
 tools = [wiki, arxiv, search] # tool
-agent = create_agent(model=model, tools= tools, system_prompt= prompt, verbose = True ) # agent
+agent = create_agent(model=model, tools= tools, system_prompt= prompt ) # agent
 
 
 if prompt:= st.chat_input(placeholder="Ask Question: "):
@@ -67,10 +67,9 @@ if prompt:= st.chat_input(placeholder="Ask Question: "):
     with st.chat_message("assistant"):
 
         # THIS SHOWS TOOL CALLS
-        st_callback = StreamlitCallbackHandler(st.container())
+        st_callback = StreamlitCallbackHandler(st.container(), expand_new_thoughts= False)
 
-        response = agent.invoke(
-            {
+        response = agent.invoke({
                 "messages": [
                     {"role": "user","content": prompt}
                             ]
@@ -81,7 +80,6 @@ if prompt:= st.chat_input(placeholder="Ask Question: "):
         )
 
         final_response = response["messages"][-1].content
-
         st.write(final_response)
 
     # Save assistant response
