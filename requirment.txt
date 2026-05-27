@@ -28,3 +28,5 @@ uvicorn
 sse_starlette
 ddgs
 torchvision
+mysql-connector-python
+SQLAlchemy
