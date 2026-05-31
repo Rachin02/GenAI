@@ -4,8 +4,8 @@ from langchain_core.prompts import PromptTemplate
 from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain_core.tools import Tool
-from langchain_classic.agents.initialize import initialize_agent
 from langchain_classic.chains import LLMMathChain, LLMChain
+from langchain_classic.agents.initialize import initialize_agent
 from langchain_classic.agents.agent_types import AgentType
 
 
@@ -72,7 +72,6 @@ for msg in st.session_state.messages:
 query = st.chat_input("Enter your question")
 
 if query:
-    if query:
         st.session_state.messages.append({"role":"user","content":query})
         st.chat_message("user").write(query)
 
@@ -82,7 +81,7 @@ if query:
 
         st.session_state.messages.append({"role":"assistant", "content": response})
         st.write(response)
-    else:
+else:
         st.write("Please enter question")
 
 

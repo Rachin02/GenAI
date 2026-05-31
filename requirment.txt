@@ -34,3 +34,4 @@ youtube-transcript-api
 validators == 0.28.1
 pytube
 numexpr
+huggingface_hub
