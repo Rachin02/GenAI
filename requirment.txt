@@ -19,6 +19,7 @@ langserve
 langchain-groq
 langchainhub
 langchain-astradb
+langchain_nvidia_ai_endpoints
 
 sentence_transformers
 
