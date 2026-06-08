@@ -38,3 +38,7 @@ pytube
 numexpr
 huggingface_hub
 grandalf
+
+crewai
+crewai_tools
+pytubefix
