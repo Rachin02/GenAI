@@ -42,3 +42,7 @@ grandalf
 crewai
 crewai_tools
 pytubefix
+
+pinecone
+pinecone_client
+pinecone_text
