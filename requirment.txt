@@ -46,3 +46,6 @@ pytubefix
 pinecone
 pinecone_client
 pinecone_text
+
+
+neo4j
